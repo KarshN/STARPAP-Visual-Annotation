@@ -1,3 +1,6 @@
 li{
-    font-family: 'Lato','Courier', 'Georgia','Helvetica','Sans Serif'
+    font-family: 'Lato','Courier', 'Georgia','Helvetica','Sans Serif';
+}
+canvas{
+    cursor:pointer;
 }
