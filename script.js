@@ -1,6 +1,6 @@
 var bigImg;
 var regions=[];
-var boxes=[[921,388,300,160],[618,447],[79,425],[1261,947],[1763,385],[1327,270],[479,917],[157,686],[1462,481]];
+var boxes=[[921,388,300,160],[618,447],[79,425],[1261,947],[1713,385],[1327,270],[459,887],[157,646],[1462,481]];
 var messages=["This section of the wall is covered in gold, and it may be an example of the gold renovations carried out during the 19th century. Gold is generally thought of as having an aesthetically pleasing hue, so the incorporation of it reflects Seville’s high valuation of beauty. The extravagant cost of materials, such as gold, used to outfit the home of the king demonstrates the level of reverence the city has for him.",
     "Silver work was also popular throughout the palace in the 19th century. The use of a balcony contributes to the castle’s open and welcoming feel, which enhances the experience of the king living in the castle. The deep thoughtfulness in the design of the Royal Alcázar indicates the city’s dedication to the monarchy.",
     "The palace prominently features arches, especially among the doorways and entrances. The highlighted arch pattern on the wall is yet another example. Through the use of arches, the palace’s designers develop thematic consistency, a key aspect of the palace’s beauty.",
@@ -41,12 +41,12 @@ function draw(){
         if(regions[i].get(mouseX*3/2,mouseY*3/2)[3]!=0){
             blurb=charSplit(messages[i])
             fill("black")
-            rect(boxes[i][0]/3*2,boxes[i][1]/3*2,350,blurb.length*15+10)
+            rect(boxes[i][0]/3*2,boxes[i][1]/3*2,400,blurb.length*17+10)
             fill("white")
-            textSize(15)
+            textSize(17)
             textFont("Courier")
             for(let e=0;e<blurb.length;e++){
-                text(blurb[e],boxes[i][0]/3*2+5,boxes[i][1]/3*2+(15*(e+1)))
+                text(blurb[e],boxes[i][0]/3*2+5,boxes[i][1]/3*2+(17*(e+1)))
             }
         }
     }
